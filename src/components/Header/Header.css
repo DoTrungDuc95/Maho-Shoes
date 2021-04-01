@@ -1,0 +1,75 @@
+.header {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header button {
+  border: none;
+  background-color: transparent;
+}
+
+.header-cart {
+  display: flex;
+  align-items: flex-start;
+}
+
+.header-lang-and-cart {
+  display: flex;
+  height: 50px;
+}
+
+.header-lang-and-cart .header-lang,
+.header-lang-and-cart span {
+  font-family: SabonLTStd-Roman;
+  font-size: 11px;
+  letter-spacing: 0.44px;
+  text-align: left;
+  color: #222222;
+}
+
+.header-cart-number {
+  border: 1.5px solid;
+  margin-top: -5px;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  padding: 5px;
+  text-align: center;
+}
+
+.header-lang {
+  margin-right: 2rem;
+}
+
+.header-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  margin-left: 120px;
+}
+
+.header-title h1 {
+  width: 109px;
+  font-family: SabonLTStd;
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 5.04px;
+  text-align: center;
+  color: #222222;
+}
+
+.header-title p {
+  width: 47px;
+  height: 15px;
+  margin-top: -15px;
+  font-family: SabonLTStd-Roman;
+  font-size: 19px;
+  letter-spacing: 0.76px;
+  text-align: center;
+  color: #222222;
+}
