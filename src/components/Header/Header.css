@@ -11,8 +11,9 @@
   background-color: transparent;
 }
 
-.header-cart {
+.header-btn {
   display: flex;
+  margin-left: 1rem;
   align-items: flex-start;
 }
 
@@ -21,27 +22,24 @@
   height: 50px;
 }
 
-.header-lang-and-cart .header-lang,
+.header-lang-and-cart button,
 .header-lang-and-cart span {
   font-family: SabonLTStd-Roman;
   font-size: 11px;
   letter-spacing: 0.44px;
-  text-align: left;
   color: #222222;
 }
 
 .header-cart-number {
+  font-family: SabonLTStd-Roman;
   border: 1.5px solid;
-  margin-top: -5px;
   height: 20px;
   width: 20px;
   border-radius: 50%;
   padding: 5px;
   text-align: center;
-}
-
-.header-lang {
-  margin-right: 2rem;
+  align-self: flex-start;
+  transform: translateY(-25%);
 }
 
 .header-title {

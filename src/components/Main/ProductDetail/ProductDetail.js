@@ -2,8 +2,10 @@ import { useState } from 'react';
 
 import './ProductDetail.css';
 
-import pre from '../../../assets/images/previous-page-icon.svg';
-import next from '../../../assets/images/next-page-icon.svg';
+import preImg from '../../../assets/images/previous-page-icon.svg';
+import nextImg from '../../../assets/images/next-page-icon.svg';
+import preGallery from '../../../assets/images/basic-left-icon.svg';
+import nextGallery from '../../../assets/images/basic-right-icon.svg';
 import sizeBox from '../../../assets/images/size-box-icon.svg';
 import moreBox from '../../../assets/images/more-box.svg';
 
@@ -34,22 +36,22 @@ const ProductDetail = () => {
   const [currentImg, setCurrentImg] = useState(0);
   const length = imgs.length;
 
-  const preImg = () => {
+  const preImgClick = () => {
     setCurrentImg(currentImg === 0 ? length - 1 : currentImg - 1);
   };
 
-  const nextImg = () => {
+  const nextImgClick = () => {
     setCurrentImg(currentImg === length - 1 ? 0 : currentImg + 1);
   };
 
   return (
     <div className="productDetail">
       <div className="productDetail-image">
-        <button className="productDetail-left" onClick={preImg}>
-          <img src={pre} />
+        <button className="productDetail-left" onClick={preImgClick}>
+          <img src={preImg} />
         </button>
-        <button className="productDetail-right" onClick={nextImg}>
-          <img src={next} />
+        <button className="productDetail-right" onClick={nextImgClick}>
+          <img src={nextImg} />
         </button>
         <div className="productDetail-img">
           {imgs.map((img, i) => {
@@ -81,11 +83,11 @@ const ProductDetail = () => {
 
         <div className="productDetail-basic">
           <button>
-            <img src={pre} />
+            <img src={preGallery} />
           </button>
           <h1>BASIC</h1>
           <button>
-            <img src={next} />
+            <img src={nextGallery} />
           </button>
         </div>
 

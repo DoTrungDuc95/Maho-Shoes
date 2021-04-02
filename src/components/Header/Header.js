@@ -13,12 +13,12 @@ const Header = () => {
         <p>shoes</p>
       </div>
       <div className="header-lang-and-cart">
-        <div className="header-lang">
+        <div className="header-btn">
           <button>EN</button>
           <span>/</span>
           <button>KR</button>
         </div>
-        <div className="header-cart">
+        <div className="header-btn">
           <button>CART</button>
           <div className="header-cart-number">0</div>
         </div>

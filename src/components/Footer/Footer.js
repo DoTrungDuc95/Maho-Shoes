@@ -37,16 +37,16 @@ const Footer = () => {
         </div>
         <div className="footer-gallery-main">
           <img src={imgs[current]} />
+          <button className="footer-arror-pre" onClick={preImg}>
+            <img src={arrowBut} />
+          </button>
+          <button className="footer-arror-next" onClick={nextImg}>
+            <img src={arrowBut} />
+          </button>
         </div>
         <div className="footer-gallery-right">
           <img src={current === length - 1 ? imgs[0] : imgs[current + 1]} />
         </div>
-        <button className="footer-arror-pre" onClick={preImg}>
-          <img src={arrowBut} />
-        </button>
-        <button className="footer-arror-next" onClick={nextImg}>
-          <img src={arrowBut} />
-        </button>
       </div>
       <div className="footer-login">
         <button>Log in now and experience it.</button>
