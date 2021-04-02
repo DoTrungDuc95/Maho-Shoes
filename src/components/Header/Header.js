@@ -1,11 +1,23 @@
+import { useState } from 'react';
+
 import './Header.css';
 
 import svgIcon from '../../assets/images/menu-icon.svg';
 
-const Header = () => {
+const Header = ({ openMenu }) => {
+  const [lang, setLang] = useState('EN');
+
+  const krClick = () => {
+    setLang('KR');
+  };
+
+  const enClick = () => {
+    setLang('EN');
+  };
+
   return (
     <div className="header">
-      <button>
+      <button onClick={openMenu}>
         <img src={svgIcon} />
       </button>
       <div className="header-title">
@@ -14,9 +26,19 @@ const Header = () => {
       </div>
       <div className="header-lang-and-cart">
         <div className="header-btn">
-          <button>EN</button>
+          <button
+            className={lang === 'EN' ? 'header-lang-active' : ''}
+            onClick={enClick}
+          >
+            EN
+          </button>
           <span>/</span>
-          <button>KR</button>
+          <button
+            className={lang === 'KR' ? 'header-lang-active' : ''}
+            onClick={krClick}
+          >
+            KR
+          </button>
         </div>
         <div className="header-btn">
           <button>CART</button>

@@ -14,7 +14,7 @@
 .header-btn {
   display: flex;
   margin-left: 1rem;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .header-lang-and-cart {
@@ -30,6 +30,19 @@
   color: #222222;
 }
 
+.header-lang-active {
+  position: relative;
+}
+
+.header-lang-active::before {
+  content: '';
+  position: absolute;
+  left: 20%;
+  bottom: 0;
+  width: 60%; /* or 100px */
+  border-bottom: 2px solid;
+}
+
 .header-cart-number {
   font-family: SabonLTStd-Roman;
   border: 1.5px solid;
@@ -38,8 +51,6 @@
   border-radius: 50%;
   padding: 5px;
   text-align: center;
-  align-self: flex-start;
-  transform: translateY(-25%);
 }
 
 .header-title {

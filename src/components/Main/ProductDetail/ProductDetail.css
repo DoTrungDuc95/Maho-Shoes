@@ -159,8 +159,14 @@ img {
 }
 
 .productDetail-color-item {
-  padding: 0.8rem;
-  margin: 0.5rem;
+  margin: 1.3rem;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  border-radius: 50%;
+}
+
+.productDetail-color-item:hover {
+  transform: scale(1.05);
 }
 
 .productDetail-slide {

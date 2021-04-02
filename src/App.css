@@ -1,0 +1,7 @@
+.app {
+  position: relative;
+}
+
+.app.app-hiden {
+  overflow: hidden;
+}
