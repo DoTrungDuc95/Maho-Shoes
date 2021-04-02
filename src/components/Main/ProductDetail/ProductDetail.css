@@ -159,10 +159,12 @@ img {
 
 .productDetail-slide {
   opacity: 0;
-  transition: 1s ease;
+  transition: 1.5s ease;
 }
 
 .productDetail-slide.productDetail-img-active {
   opacity: 1;
   transition: 1.5s ease-in-out;
+
+  /* transform: scale(1.08); */
 }
