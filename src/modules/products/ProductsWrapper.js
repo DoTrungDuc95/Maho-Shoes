@@ -113,7 +113,6 @@ export default function ProductsWrapper() {
     const handleLoadMore = () => {
         setLimit(value => value + 1);
     }
-    console.log("products.length > (limit * LIMIT_PRODUCTS)", products.length > (limit * LIMIT_PRODUCTS))
 
     return (
         <div className="productsWrapper">
