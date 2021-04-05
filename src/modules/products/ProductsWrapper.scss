@@ -4,6 +4,7 @@
 .productsWrapper {
     &__container {
         width: 60%;
+        max-width: 1000px;
         margin: auto;
         .products {
             .product {
@@ -22,12 +23,12 @@
                 text-align: center;
                 @include flex();
                 color: $white;
-                transition: .3s;
+                transition: 0.3s;
                 box-sizing: border-box;
-                &:hover{
-                  color:$black;
-                  background-color: $white;
-                  border: 1px solid $black;  
+                &:hover {
+                    color: $black;
+                    background-color: $white;
+                    border: 1px solid $black;
                 }
                 span {
                     margin-right: 5px;
