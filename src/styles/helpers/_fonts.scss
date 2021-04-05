@@ -1,0 +1,79 @@
+@font-face {
+    font-family: SabonLTStd;
+    src: local(SabonLTStd-Bold), url(../../assets/fonts/SabonLTStd-Bold.otf) format("truetype");
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+}
+@font-face {
+    font-family: SabonLTStd-Roman;
+    src: local(SabonLTStd-Roman),url(../../assets/fonts/SabonLTStd-Roman.otf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+}
+.Text-Style {
+    font-family: SabonLTStd;
+    font-size: 28px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: 5.04px;
+    text-align: center;
+    color: #222222;
+}
+.Text-Style-5 {
+    font-family: SabonLTStd;
+    font-size: 26px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 4.62;
+    letter-spacing: normal;
+    text-align: center;
+    color: #222222;
+}
+.Text-Style-2 {
+    font-family: Archistico;
+    font-size: 22px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.73;
+    letter-spacing: -0.44px;
+    text-align: center;
+    color: #ffffff;
+}
+.Text-Style-3 {
+    font-family: SabonLTStd-Roman;
+    font-size: 19px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 6.32;
+    letter-spacing: 0.76px;
+    text-align: center;
+    color: #222222;
+}
+.Text-Style-6 {
+    font-family: SabonLTStd;
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    color: #222222;
+}
+.Text-Style-4 {
+    font-family: NotoSerifCJKkr;
+    font-size: 12px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.67;
+    letter-spacing: normal;
+    text-align: center;
+    color: #333333;
+}
