@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import './ProductDetail.css';
+import './ProductDetail.scss';
 
 import preImg from '../../../assets/images/previous-page-icon.svg';
 import nextImg from '../../../assets/images/next-page-icon.svg';
