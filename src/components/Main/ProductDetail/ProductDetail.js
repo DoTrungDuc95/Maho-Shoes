@@ -1,6 +1,8 @@
 import { useState } from 'react';
 
-import './ProductDetail.css';
+import './ProductDetail.scss';
+
+import GallerySlider from '../../GallerySlider/GallerySlider';
 
 import preImg from '../../../assets/images/previous-page-icon.svg';
 import nextImg from '../../../assets/images/next-page-icon.svg';
@@ -15,7 +17,6 @@ import mainImg from '../../../assets/images/main-image@2x.jpg';
 import img1 from '../../../assets/images/ảnh sưu tầm.jpg';
 import img2 from '../../../assets/images/Collect Shop (-RBITS-Team) - Đơn số 5.jpg';
 import img3 from '../../../assets/images/Gửi ảnh - Cuộc đời của những kẻ tội đồ.jpg';
-import GallerySlider from '../../GallerySlider/GallerySlider';
 
 const ProductDetail = () => {
   //test
