@@ -21,7 +21,6 @@ class ErrorBoundary extends React.Component {
     }
 
     render() {
-        const { t } = this.props;
         if (this.state.errorInfo) {
             // Error path
             return (
@@ -33,11 +32,11 @@ class ErrorBoundary extends React.Component {
                                     <div className="mb-4 text-center">
                                         <i className="fa fa-close fa-3x text-danger" />
                                     </div>
-                                    <h5 className="text-center mb-4">{t('ERROR.500')}</h5>
+                                    <h5 className="text-center mb-4">500</h5>
                                     <div className="text-center">
                                         <button className="btn btn-secondary btn-sm" onClick={this.handleReload}>
                                             <i className="fa fa-fw fa-refresh" aria-hidden="true" />
-                                            <span> {t('PAGE.RELOAD')}</span>
+                                            <span> Reload Page</span>
                                         </button>
                                     </div>
                                     <details style={{ whiteSpace: 'pre-wrap' }}>
