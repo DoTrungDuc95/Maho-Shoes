@@ -1,4 +1,4 @@
-import './Main.scss';
+import './Main.css';
 import ProductDetail from './ProductDetail/ProductDetail';
 
 const Main = () => {

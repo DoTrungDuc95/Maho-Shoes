@@ -1,4 +1,4 @@
-import './Menu.scss';
+import './Menu.css';
 
 import closeIcon from '../../assets/images/close-icon.svg';
 

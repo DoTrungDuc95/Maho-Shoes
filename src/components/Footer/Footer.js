@@ -1,4 +1,4 @@
-import './Footer.scss';
+import './Footer.css';
 
 import you from '../../assets/images/youtube-icon.svg';
 import inta from '../../assets/images/instagram-icon.svg';

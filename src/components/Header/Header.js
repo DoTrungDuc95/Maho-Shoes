@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import './Header.scss';
+import './Header.css';
 
 import svgIcon from '../../assets/images/menu-icon.svg';
 
