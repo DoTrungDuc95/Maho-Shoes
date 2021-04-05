@@ -1,0 +1,84 @@
+.header {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header button {
+  border: none;
+  background-color: transparent;
+}
+
+.header-btn {
+  display: flex;
+  margin-left: 1rem;
+  align-items: center;
+}
+
+.header-lang-and-cart {
+  display: flex;
+  height: 50px;
+}
+
+.header-lang-and-cart button,
+.header-lang-and-cart span {
+  font-family: SabonLTStd-Roman;
+  font-size: 11px;
+  letter-spacing: 0.44px;
+  color: #222222;
+}
+
+.header-lang-active {
+  position: relative;
+}
+
+.header-lang-active::before {
+  content: '';
+  position: absolute;
+  left: 20%;
+  bottom: 0;
+  width: 60%; /* or 100px */
+  border-bottom: 2px solid;
+}
+
+.header-cart-number {
+  font-family: SabonLTStd-Roman;
+  border: 1.5px solid;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  padding: 5px;
+  text-align: center;
+}
+
+.header-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  margin-left: 120px;
+}
+
+.header-title h1 {
+  width: 109px;
+  font-family: SabonLTStd;
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 5.04px;
+  text-align: center;
+  color: #222222;
+}
+
+.header-title p {
+  width: 47px;
+  height: 15px;
+  margin-top: -15px;
+  font-family: SabonLTStd-Roman;
+  font-size: 19px;
+  letter-spacing: 0.76px;
+  text-align: center;
+  color: #222222;
+}

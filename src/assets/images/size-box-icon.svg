@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="158" height="45">
+    <path fill="#3D3D3D" fill-opacity="0" fill-rule="evenodd" stroke="#3D3D3D" d="M3.5 3.5h151v38H3.5v-38z"/>
+    <text x="24.5" y="26.437" fill="#3D3D3D" font-family="Sabon LT Std" font-size="14" font-weight="bold">
+        size
+    </text>
+    <path fill="#333" fill-rule="evenodd" d="M133.515 23.229l-3.285 3.286-.745-.744L132.256 23l-2.771-2.77.745-.744 3.285 3.285-.229.229.229.229z"/>
+</svg>

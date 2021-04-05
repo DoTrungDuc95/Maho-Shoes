@@ -1,0 +1,182 @@
+.productDetail {
+  width: 60%;
+  margin: auto;
+}
+
+.productDetail-image {
+  width: 550px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 3rem;
+  position: relative;
+  margin: auto;
+}
+
+.productDetail-image button {
+  width: 45px;
+  height: 30px;
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: 0.2s ease-in-out;
+}
+
+.productDetail-image button:hover {
+  transform: translateY(-50%) scale(1.2);
+}
+
+.productDetail-left {
+  left: -20px;
+}
+
+.productDetail-right {
+  right: -20px;
+}
+
+.productDetail-img {
+  width: 550px;
+  height: 600px;
+  position: relative;
+}
+
+.productDetail-img img {
+  position: absolute;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.productDetail-detail {
+  width: 550px;
+  margin: auto;
+}
+
+.productDetail-product-name {
+  height: 25px;
+  font-family: SabonLTStd;
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center;
+  color: #222222;
+}
+
+.productDetail-description {
+  height: 15px;
+  font-family: SabonLTStd-Roman;
+  font-size: 15px;
+  text-align: center;
+  color: #a1a2a3;
+}
+
+.productDetail-button {
+  border: none;
+  background-color: transparent;
+}
+
+.productDetail-button-size {
+  width: 150px;
+  height: 38px;
+  margin: 0.5rem 200px;
+}
+
+.productDetail-button-more {
+  width: 226px;
+  height: 48px;
+  margin: 0.5rem 162px;
+}
+
+.productDetail-price {
+  font-family: SabonLTStd;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  padding: 0.5rem 0;
+  background-color: #222222;
+}
+
+.productDetail-basic {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 7rem;
+  margin: 1rem;
+}
+
+.productDetail-basic h1 {
+  font-family: SabonLTStd;
+  font-size: 26px;
+  font-weight: bold;
+  letter-spacing: 1.04px;
+  text-align: center;
+  color: #222222;
+}
+
+.productDetail-basic button {
+  border: none;
+  background-color: transparent;
+}
+
+.productDetail-options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.productDetail-options button {
+  height: 44px;
+  width: 100%;
+  font-family: SabonLTStd;
+  font-size: 14px;
+  font-weight: bold;
+  color: #222222;
+  background-color: transparent;
+  border: 1px solid;
+}
+
+.productDetail-options button:nth-child(2) {
+  margin: 0 0.5rem;
+}
+
+.productDetail-options-button-active {
+  color: #ffffff !important;
+  background-color: #222222 !important;
+}
+
+.productDetail-color {
+  margin: 2rem 0;
+}
+
+.productDetail-color {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+}
+
+.productDetail-color-item {
+  margin: 1.3rem;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  border-radius: 50%;
+}
+
+.productDetail-color-item:hover {
+  transform: scale(1.05);
+}
+
+.productDetail-slide {
+  opacity: 0;
+  transition: 1.5s ease;
+}
+
+.productDetail-slide.productDetail-img-active {
+  opacity: 1;
+  transition: 1.5s ease-in-out;
+
+  /* transform: scale(1.08); */
+}
