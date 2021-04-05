@@ -1,10 +1,5 @@
 import React from 'react'
-import FaceIcon from '@material-ui/icons/Face';
+import ProductsWrapper from '../../modules/products/ProductsWrapper';
 export default function ProductsPage() {
-    return (
-        <div>
-            ProductsPage
-            <FaceIcon />
-        </div>
-    )
+    return <ProductsWrapper />
 }
