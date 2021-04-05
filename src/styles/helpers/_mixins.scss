@@ -1,0 +1,73 @@
+// css function
+
+@mixin text($color, $fs, $fw) {
+    color: $color;
+    font-size: $fs;
+    font-weight: $fw;
+}
+
+@mixin button($bc, $bor, $pad-tb, $pad-rl) {
+    background-color: $bc;
+    border: 1px solid $bor;
+    padding: $pad-tb $pad-rl;
+}
+
+@mixin buttonHover($bc, $bor) {
+    background-color: $bc;
+    border: 1px solid $bor;
+}
+
+@mixin mediaQuery($screen) {
+    @if map-has-key($map: $breakpoints, $key: $screen) {
+        $value: map-get(
+            $map: $breakpoints,
+            $key: $screen,
+        );
+
+        @media screen and (max-width: $value) {
+            @content;
+        }
+    } @else {
+        @warn "#{$screen }'has not found'";
+    }
+}
+
+@mixin inputSearch($bc, $bor) {
+    background-color: $bc;
+    border: 1px solid $bor;
+}
+
+@mixin flex() {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+$breakpoints: (
+    "extra-large": 1200px,
+    "large": 992px,
+    "large-under": 991px,
+    "medium": 768px,
+    "medium-under": 767px,
+    "small": 576px,
+    "small-under": 575px,
+);
+@mixin responds-to($breakpoint) {
+    @if map-has-key($map: $breakpoints, $key: $breakpoint) {
+        $value: map-get(
+            $map: $breakpoints,
+            $key: $breakpoint,
+        );
+        @media screen and (max-width: $value) {
+            @content;
+        }
+    } @else {
+        @warn "`{$breakpoint}` isn't in breakpoints";
+    }
+}
