@@ -1,7 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="233" height="55">
-    <path fill="#222" fill-opacity="0" fill-rule="evenodd" stroke="#3D3D3D" d="M3.5 3.5h226v48H3.5v-48z"/>
-    <text x="88.5" y="30.437" fill="#222" font-family="Sabon LT Std" font-size="14" font-weight="bold">
-        more
-    </text>
-    <path fill="#222" fill-rule="evenodd" d="M144.514 26.229l-3.285 3.286-.229-.229-.229.229-3.286-3.286.744-.743 2.771 2.77 2.77-2.77.744.743z"/>
+<svg 
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ width="233px" height="55px">
+<path fill-rule="evenodd"  stroke-width="1px" stroke="rgb(61, 61, 61)" fill="rgb(34, 34, 34)"
+ d="M3.500,3.500 L229.500,3.500 L229.500,51.500 L3.500,51.500 L3.500,3.500 Z"/>
+<text font-family="Sabon LT Std" fill="rgb(255, 255, 255)" font-weight="bold" font-size="14px" x="88.5px" y="30.4369999999999px">more</text>
+<path fill-rule="evenodd"  opacity="0" fill="rgb(245, 240, 240)"
+ d="M136.500,22.500 L146.500,22.500 L146.500,32.500 L136.500,32.500 L136.500,22.500 Z"/>
+<path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+ d="M144.514,26.229 L141.229,29.515 L141.000,29.285 L140.770,29.515 L137.485,26.229 L138.229,25.485 L141.000,28.256 L143.770,25.485 L144.514,26.229 Z"/>
 </svg>

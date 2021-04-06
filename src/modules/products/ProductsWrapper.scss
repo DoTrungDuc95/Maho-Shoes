@@ -1,0 +1,42 @@
+@import "../../styles/helpers/mixins";
+@import "../../styles/helpers/variables";
+
+.productsWrapper {
+    &__container {
+        width: 60%;
+        max-width: 1000px;
+        margin: auto;
+        .products {
+            .product {
+                padding-bottom: 40px;
+            }
+        }
+        .productsWrapper__more {
+            padding-top: 50px;
+            display: flex;
+            justify-content: center;
+            .load-more {
+                cursor: pointer;
+                width: 226px;
+                height: 48px;
+                background-color: $black;
+                text-align: center;
+                @include flex();
+                color: $white;
+                transition: 0.3s;
+                box-sizing: border-box;
+                &:hover {
+                    color: $black;
+                    background-color: $white;
+                    border: 1px solid $black;
+                }
+                span {
+                    margin-right: 5px;
+                }
+                svg {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}

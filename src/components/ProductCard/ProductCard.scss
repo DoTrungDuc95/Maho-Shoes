@@ -1,0 +1,108 @@
+@import "../../styles/helpers/variables";
+@import "../../styles/helpers/mixins";
+.productCard {
+    cursor: pointer;
+    &:hover {
+        .productCard-img {
+            .overlay {
+                opacity: 1;
+            }
+        }
+    }
+    &-img {
+        position: relative;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba($color: $black, $alpha: 0.3);
+            opacity: 0;
+            transition: 0.3s;
+        }
+    }
+
+    &-content {
+        &__cart {
+            text-align: center;
+            padding-top: 20px;
+            @include responds-to("large-monitor") {
+                padding-top: 10px;
+            }
+            img {
+                width: 38px;
+                height: 38px;
+                transform: translateY(0);
+                transition: 0.3s;
+                &:hover {
+                    transform: translateY(-3px);
+                }
+                @include responds-to("large-monitor") {
+                    width: 30px;
+                    height: 30px;
+                }
+                @include responds-to("large") {
+                    width: 25px;
+                    height: 25px;
+                }
+            }
+        }
+        &__brand {
+            font-family: SabonLTStd;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px 0 5px 0;
+            text-align: center;
+            @include responds-to("large-monitor") {
+                font-size: 15px;
+            }
+            @include responds-to("large-monitor") {
+                padding: 8px 0 5px 0;
+            }
+            @include responds-to("large") {
+                font-size: 13px;
+                padding: 5px 0 4px 0;
+                
+            }
+        }
+        &__name {
+            text-align: center;
+            font-family: SabonLTStd;
+            font-size: 18px;
+            font-weight: bold;
+            @include responds-to("extra-large-monitor") {
+                font-size: 15px;
+            }
+            @include responds-to("large-monitor") {
+                font-size: 13px;
+            }
+            @include responds-to("large") {
+                font-size: 11px;
+            }
+        }
+        &__price {
+            text-align: center;
+            padding-top: 26px;
+            font-size: 18px;
+            font-family: SabonLTStd;
+            font-weight: bold;
+            @include responds-to("extra-large-monitor") {
+                font-size: 15px;
+            }
+            @include responds-to("large-monitor") {
+                font-size: 13px;
+                padding-top: 18px;
+            }
+            @include responds-to("large") {
+                font-size: 11px;
+                padding-top: 12px;
+
+            }
+        }
+    }
+}
