@@ -56,7 +56,9 @@ const GallerySlider = () => {
       }
     });
 
-    rightSlide.style.transform = `translateX(-${(100 * couter) / loopLength}%)`;
+    rightSlide.style.transform = `translateX(-${
+      (100 * rightCounter) / loopLength
+    }%)`;
     rightSlide.addEventListener('transitionend', () => {
       if (rightSlide.children[rightCounter].id === 'last-clone') {
         rightSlide.style.transition = 'none';
@@ -67,13 +69,15 @@ const GallerySlider = () => {
       }
     });
 
-    leftSlide.style.transform = `translateX(-${(100 * couter) / loopLength}%)`;
+    leftSlide.style.transform = `translateX(-${
+      (100 * leftCounter) / loopLength + 200 / (loopLength * 3)
+    }%)`;
     leftSlide.addEventListener('transitionend', () => {
       if (leftSlide.children[leftCounter].id === 'last-clone') {
         leftSlide.style.transition = 'none';
         leftCounter = loopLength - leftCounter;
         leftSlide.style.transform = `translateX(-${
-          (100 * leftCounter) / loopLength
+          (500 * leftCounter) / (loopLength * 3)
         }%)`;
       }
     });
@@ -116,24 +120,19 @@ const GallerySlider = () => {
       }
     });
 
-    leftSlide.style.transform = `translateX(-${(100 * couter) / loopLength}%)`;
+    leftSlide.style.transform = `translateX(-${
+      (100 * leftCounter) / loopLength + 200 / (loopLength * 3)
+    }%)`;
     leftSlide.addEventListener('transitionend', () => {
       if (leftSlide.children[leftCounter].id === 'first-clone') {
+        console.log(leftCounter);
         leftSlide.style.transition = 'none';
         leftCounter = length;
         leftSlide.style.transform = `translateX(-${
-          (100 * leftCounter) / loopLength
+          (leftCounter * 100) / loopLength + 200 / (loopLength * 3)
         }%)`;
       }
     });
-  };
-
-  const decrease = (pos) => {
-    if (pos.children[couter].id === 'first-clone') {
-      pos.style.transition = 'none';
-      couter = length;
-      pos.style.transform = `translateX(-${(100 * couter) / loopLength}%)`;
-    }
   };
 
   const style = {
@@ -146,6 +145,11 @@ const GallerySlider = () => {
     transform: `translateX(-${100 / loopLength}%)`,
   };
 
+  const style3 = {
+    width: `${loopLength * 300}%`,
+    transform: `translateX(-${500 / (loopLength * 3)}%)`,
+  };
+
   const setId = (index) => {
     if (index === 0) return 'first-clone';
     if (index === length + 1) return 'last-clone';
@@ -156,7 +160,7 @@ const GallerySlider = () => {
     <div className="big">
       <div className="gallery">
         <div className="gallery-grid">
-          <div id="gallery-left" className="gallery-main" style={style2}>
+          <div id="gallery-left" className="gallery-left" style={style3}>
             {leftLoopImgs.map((img, i) => (
               <img key={i} src={img} id={setId(i)} />
             ))}
