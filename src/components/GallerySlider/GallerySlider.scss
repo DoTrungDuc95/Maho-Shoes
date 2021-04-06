@@ -1,0 +1,64 @@
+.big {
+  position: relative;
+}
+
+.gallery {
+  width: 100%;
+  height: 230px;
+  margin: 3rem auto 1rem auto;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-column-gap: 0.5rem;
+  overflow: hidden;
+}
+
+.gallery-grid {
+  height: 100%;
+  overflow: hidden;
+}
+
+.gallery-main {
+  height: 100%;
+  display: flex;
+}
+
+
+.gallery-left {
+ 
+  height: 100%;
+  display: flex;
+}
+
+
+.big button {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  top: 50%;
+}
+
+.arror-pre {
+  left: 16%;
+  transform: translateY(-50%) rotateY(180deg);
+}
+
+.arror-pre:hover {
+  transform: translateY(-50%) rotateY(180deg) scale(1.3);
+}
+
+.arror-next {
+  right: 16%;
+  transform: translateY(-50%);
+}
+
+.arror-next:hover {
+  transform: translateY(-50%) scale(1.3);
+}
+
+// .left {
+//   width: 20%;
+// }
+
+// .left img {
+//   float: right;
+// }

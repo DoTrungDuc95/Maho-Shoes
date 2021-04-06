@@ -32,53 +32,6 @@
   margin: 2rem 0;
 }
 
-.footer-gallery {
-  width: 100%;
-  margin: 3rem auto 1rem auto;
-  display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
-  grid-gap: 0.7rem;
-  overflow: hidden;
-}
-
-.footer-gallery-main {
-  position: relative;
-}
-
-.footer-gallery-main button {
-  position: absolute;
-  background-color: transparent;
-  border: none;
-  top: 50%;
-}
-
-.footer-arror-pre {
-  left: -3rem;
-  transform: translateY(-50%) rotateY(180deg);
-}
-
-.footer-arror-pre:hover {
-  transform: translateY(-50%) rotateY(180deg) scale(1.3);
-}
-
-.footer-arror-next {
-  right: -3rem;
-  transform: translateY(-50%);
-}
-
-.footer-arror-next:hover {
-  transform: translateY(-50%) scale(1.3);
-}
-
-.footer-gallery-left img {
-  width: 200%;
-  float: right;
-}
-
-.footer-gallery-right img {
-  width: 200%;
-}
-
 .footer-info p {
   font-family: NotoSerifCJKkr;
   font-size: 12px;
